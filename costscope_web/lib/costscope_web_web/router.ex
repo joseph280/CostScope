@@ -17,7 +17,7 @@ defmodule CostscopeWebWeb.Router do
   scope "/", CostscopeWebWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", ChatLive, :index
   end
 
   # Other scopes may use custom stacks.
